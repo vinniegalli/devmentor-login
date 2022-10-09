@@ -1,0 +1,104 @@
+/* Aplicando reset no css padrão */
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* CENTRALIZANDO TODO NOSSO CONTEUDO */
+body {
+  background: #121212;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button{
+  cursor: pointer;
+}
+
+.login{
+  background: #FFF;
+  display: flex;
+  flex-direction: column;
+  padding: 18px;
+  border-radius: 5px;
+  width: 80%;
+}
+
+.login-title{
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+.login input {
+  background: #E5E5E5;
+  color: #464646;
+  font-weight: 400;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 18px;
+  border-radius: 3px;
+}
+
+.login input::placeholder{
+  color: #464646;
+  font-weight: 400;
+}
+
+.login .btn-acessar{
+  font-size: 14px;
+  font-weight: 400;
+  background: #121212;
+  color: #fff;
+  width: 100%;
+  padding: 10px;
+  border-radius: 3px;
+  margin-bottom: 53px;
+}
+
+.login .social{
+  display: flex;
+  flex-direction: column;
+}
+
+.login .social .social-title{
+  color: #464646;
+  font-weight: 400;
+  font-size: 12px;
+  text-align: center;
+}
+
+.login .social button{
+  font-size: 14px;
+  width: 100%;
+  text-align: left;
+  font-weight: 400;
+  padding: 6px 12px;
+  color: #fff;
+  margin-top: 10px;
+}
+
+.login .social .btn-twitter{
+  background: #56A7F2;
+}
+
+.login .social .btn-facebook{
+  background: #1E3C72;
+}
+
+@media (min-width: 768px) {
+  .login{
+    width: 50%;
+  }
+}
+
+@media (min-width: 1024px){
+  .login{
+    width: 30%;
+  }
+}
